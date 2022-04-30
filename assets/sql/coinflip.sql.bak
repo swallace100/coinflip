@@ -1,0 +1,39 @@
+--
+-- Database: `flip_counts`
+--
+
+CREATE DATABASE IF NOT EXISTS `flip_counts` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `flip_counts`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `flip_counts`
+--
+
+DROP TABLE IF EXISTS `flip_counts`;
+CREATE TABLE `flip_counts` (
+  `Total` int(100000000) NOT NULL,
+  `Heads` int(100000000) NOT NULL,
+  `Tails` int(100000000) NOT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tbl_contact`
+--
+ALTER TABLE `tbl_contact`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_contact`
+--
+ALTER TABLE `tbl_contact`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;

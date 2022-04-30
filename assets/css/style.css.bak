@@ -1,0 +1,78 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+	font-family: Georgia, serif;
+}
+
+.main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 800px;
+}
+
+.flip-button {
+	background-color: white;
+	background-image: none;
+	border: black;
+	border-style: solid;
+	padding: 50px 100px;
+	text-align: center;
+	display: inline-block;
+	font-size: 30px;
+	transition: 3s
+}
+
+.flip-button:hover, .flip-button:active, .flip.button:focus {
+	background-color:#dc143c;
+}
+
+a {
+  text-decoration: none;
+  color: #89CFF0;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: black;
+}
+
+.coin {
+	margin: 50px 0 50px 0;
+}
+
+h1, h2 {
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+h1 {
+	font-size: 90px;
+	color: black;
+}
+
+h2 {
+	font-size: 25px;
+	color: #dc143c;
+	padding: 0 0 50px 0;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: black;
+  padding: 30px 0;
+  color: GrayText;
+}
+#footer .copyright {
+  text-align: center;
+}
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 11px;
+  color: GrayText;
+}

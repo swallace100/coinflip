@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Flip a Coin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+  <!-- Import CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- ======= Javascript ====== -->
+<script>
+
+
+	function flipCoin() {
+
+		var image_change = document.getElementById("heads_tails");
+		// Random choice between 0 and 1. 1 is heads and 0 is tails. The coin image will change depending the result.
+		var flip = Math.floor(Math.random() * 2)
+			if (flip == 1) {
+				image_change.src="../Coin Flip/assets/img/coin_heads.jpg";
+				}
+			else if (flip == 0){
+				image_change.src="../Coin Flip/assets/img/coin_tails.jpg";
+				}
+    }
+	
+	
+</script>
+
+
+  <!-- ======= Main ======= -->
+  <section id="main">
+    <div class="main-container">
+	  <center>
+        <h1>Flip A Coin</h1>
+        <h2>Click below to test your luck... If you dare...</h2>
+        <div class="flip-button">
+          <a href="#button" onclick="flipCoin()">Click to Flip</a>
+        </div>
+		<div class="coin">
+			<img src="assets/img/coin_clear.jpg" id="heads_tails" width="150" height="150" alt="No coin">
+		</div>
+		</center>
+    </div>
+  </section><!-- End Main -->
+
+ 
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright 2021. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by swallace100 on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+</body>
+
+</html>
